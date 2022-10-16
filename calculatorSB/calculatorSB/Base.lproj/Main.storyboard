@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="calculatorSB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Djl-AE-nRS">
+                                <rect key="frame" x="16" y="96" width="361" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eYk-dI-Bsl">
+                                <rect key="frame" x="16" y="159" width="361" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEj-IH-Mf3">
+                                <rect key="frame" x="16" y="230" width="140" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="+">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="1" green="0.76276244029999996" blue="0.9383572671" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressPlusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JN1-Jo-lXh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="두 숫자를 입력하고 연산버튼을 누르세요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJA-hl-PJH">
+                                <rect key="frame" x="16" y="383" width="361" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pz-po-T6c">
+                                <rect key="frame" x="237" y="230" width="140" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="-">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="1" green="0.76276244029999996" blue="0.9383572671" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressMinusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AS1-bn-RhT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBs-rY-2Cb">
+                                <rect key="frame" x="16" y="281" width="140" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="*">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="1" green="0.76276244029999996" blue="0.9383572671" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressMultiplyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NFF-Nf-24Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmZ-y2-Q2X">
+                                <rect key="frame" x="237" y="281" width="140" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="/">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="1" green="0.76276244029999996" blue="0.9383572671" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressDivideButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="717-Qn-eAE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPs-LF-cSW">
+                                <rect key="frame" x="16" y="337" width="140" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="제곱">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="1" green="0.76276244029999996" blue="0.9383572671" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tww-Zd-eYp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUx-Y8-d3C">
+                                <rect key="frame" x="237" y="336" width="140" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="나머지">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="1" green="0.76276244029999996" blue="0.9383572671" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressRemainButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oy8-hW-Vc6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstTextField" destination="Djl-AE-nRS" id="gmM-3T-wti"/>
+                        <outlet property="resultLabel" destination="SJA-hl-PJH" id="J3h-DO-jjw"/>
+                        <outlet property="secondTextField" destination="eYk-dI-Bsl" id="ORJ-fI-QDr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
