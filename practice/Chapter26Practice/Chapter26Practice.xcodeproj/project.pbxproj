@@ -12,9 +12,9 @@
 		99496ACA2907821400B1C23B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99496AC92907821400B1C23B /* Assets.xcassets */; };
 		99496ACD2907821400B1C23B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99496ACC2907821400B1C23B /* Preview Assets.xcassets */; };
 		99496AD6290782CE00B1C23B /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99496AD5290782CE00B1C23B /* Car.swift */; };
-		9985A312290783B60084D6C2 /* carData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9985A311290783B60084D6C2 /* carData.json */; };
 		9985A314290784120084D6C2 /* CarData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9985A313290784120084D6C2 /* CarData.swift */; };
 		9985A316290797FC0084D6C2 /* CarStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9985A315290797FC0084D6C2 /* CarStore.swift */; };
+		99949518291251CC00FCDD58 /* carData.json in Resources */ = {isa = PBXBuildFile; fileRef = 99949517291251CC00FCDD58 /* carData.json */; };
 		99A8F95B29079B5400AC300D /* CarDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A8F95A29079B5400AC300D /* CarDetail.swift */; };
 		99A8F95D29079F1800AC300D /* AddNewCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A8F95C29079F1800AC300D /* AddNewCar.swift */; };
 /* End PBXBuildFile section */
@@ -26,9 +26,9 @@
 		99496AC92907821400B1C23B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99496ACC2907821400B1C23B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		99496AD5290782CE00B1C23B /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Car.swift; path = ../Car.swift; sourceTree = "<group>"; };
-		9985A311290783B60084D6C2 /* carData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = carData.json; path = ../../ListNavDemo/ListNavDemo/carData.json; sourceTree = "<group>"; };
 		9985A313290784120084D6C2 /* CarData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarData.swift; sourceTree = "<group>"; };
 		9985A315290797FC0084D6C2 /* CarStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarStore.swift; sourceTree = "<group>"; };
+		99949517291251CC00FCDD58 /* carData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carData.json; sourceTree = "<group>"; };
 		99A8F95A29079B5400AC300D /* CarDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetail.swift; sourceTree = "<group>"; };
 		99A8F95C29079F1800AC300D /* AddNewCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,8 +70,8 @@
 				99496AC52907821400B1C23B /* Chapter26PracticeApp.swift */,
 				99496AC72907821400B1C23B /* ContentView.swift */,
 				99A8F95C29079F1800AC300D /* AddNewCar.swift */,
+				99949517291251CC00FCDD58 /* carData.json */,
 				99496AC92907821400B1C23B /* Assets.xcassets */,
-				9985A311290783B60084D6C2 /* carData.json */,
 				99496ACB2907821400B1C23B /* Preview Content */,
 			);
 			path = Chapter26Practice;
@@ -144,7 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99496ACD2907821400B1C23B /* Preview Assets.xcassets in Resources */,
-				9985A312290783B60084D6C2 /* carData.json in Resources */,
+				99949518291251CC00FCDD58 /* carData.json in Resources */,
 				99496ACA2907821400B1C23B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
